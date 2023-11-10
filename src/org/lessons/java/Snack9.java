@@ -36,11 +36,7 @@ public class Snack9 {
             System.out.print(oddArray[i] + " ");
         }
 		
-		
-		
-		
-		
-		
+
 		
 	} // stop main void 
 
