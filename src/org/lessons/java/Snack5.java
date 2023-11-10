@@ -17,7 +17,7 @@ public class Snack5 {
 			
 			// store input user
 			String input = in.nextLine().toLowerCase().replaceAll("\\s", "");
-			
+
             if (input.equals("0")) {
                 flag = false;
                 System.out.println("Operazione terminata");
@@ -26,6 +26,7 @@ public class Snack5 {
 			
 			// make it an array
 			char[] array = input.toCharArray();
+
 			
 			for (int i=0; i<array.length; i++) {
 				
@@ -53,14 +54,8 @@ public class Snack5 {
 			numbers = 0;
 			symbols = 0;
 			
-			in.close();
 		}
-
-		
-		
-		
-		
-		
+		in.close();
 
 	}
 
