@@ -43,7 +43,7 @@ public class Snack5 {
 				
 				
 			}
-			System.out.println(array.getClass().getSimpleName());
+			// System.out.println(array.getClass().getSimpleName());
 
 			System.out.println("Numero delle lettere: " + characters);
 			System.out.println("Numero delle cifre: "+ numbers);
@@ -53,6 +53,7 @@ public class Snack5 {
 			numbers = 0;
 			symbols = 0;
 			
+			in.close();
 		}
 
 		
