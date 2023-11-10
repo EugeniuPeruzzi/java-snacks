@@ -19,11 +19,9 @@ public class Snack6 {
         	
         	// convert from ASCII vaues ex 0 --> 48, 1 -->49 ecc...
         	num = num * 10 + ((int) chars[i] - 48);
-        	
-        	System.out.println(num);
-        	
-        	
+        	        	
         }//stop for
+        System.out.println(num);
         
         in.close();
         
