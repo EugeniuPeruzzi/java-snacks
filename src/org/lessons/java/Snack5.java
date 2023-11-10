@@ -9,41 +9,51 @@ public class Snack5 {
 		int characters = 0;
 		int numbers = 0;
 		int symbols = 0;
+		
 		boolean flag = true;
 		
-		
-		System.out.println("Inserisci un qualcosa: ");
-		
-		// store input user
-		String input = in.nextLine().toLowerCase().replaceAll("\\s", "");
-		
-		// make it an array
-		char[] array = input.toCharArray();
-		
-		if(array != 0) {
+		while (flag) {
+			System.out.print("Inserisci un qualcosa (0 termina l'operazione): ");
+			
+			// store input user
+			String input = in.nextLine().toLowerCase().replaceAll("\\s", "");
+			
+            if (input.equals("0")) {
+                flag = false;
+                System.out.println("Operazione terminata");
+                continue;
+            }
+			
+			// make it an array
+			char[] array = input.toCharArray();
+			
+			for (int i=0; i<array.length; i++) {
+				
+				char caratteri = array[i];
+				
+				if (Character.isLetter(caratteri)) {
+					characters ++;
+				}
+				else if (Character.isDigit(caratteri)) {
+					numbers ++;
+				}
+				else {
+					symbols ++;
+				}
+				
+				
+			}
+
+			System.out.println("Numero delle lettere: " + characters);
+			System.out.println("Numero delle cifre: "+ numbers);
+			System.out.println("Numero delle simboli: "+ symbols + "\n");
+			
+			characters = 0;
+			numbers = 0;
+			symbols = 0;
 			
 		}
-		
-		for (int i=0; i<array.length; i++) {
-			
-			char caratteri = array[i];
-			
-			if (Character.isLetter(caratteri)) {
-				characters ++;
-			}
-			else if (Character.isDigit(caratteri)) {
-				numbers ++;
-			}
-			else {
-				symbols ++;
-			}
-			
-			
-		}
-		System.out.println("Numero delle lettere: " + characters);
-		System.out.println("Numero delle cifre: "+ numbers);
-		System.out.println("Numero delle simboli: "+ symbols);
-		
+
 		
 		
 		
